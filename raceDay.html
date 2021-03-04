@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let raceNumber = Math.floor(Math.random() * 1000);
+
+		console.log(`${raceNumber}`);
+
+		let earlyRunner = false;
+
+		let ageRunner = 18;
+
+		if (earlyRunner && ageRunner > 18){
+		  raceNumber+=1000;
+		}
+
+		if(earlyRunner && ageRunner > 18){
+		  console.log(`Runner ${raceNumber}, your race starts at 9:30.`);
+		} 
+		else if (earlyRunner === false && ageRunner > 18){
+		    console.log(`Runner ${raceNumber}, your race starts at 11:00.`);
+		}
+		else if (ageRunner < 18){
+		console.log(`Your race starts at 12:30pm, and your race number is ${raceNumber}. Have fun and best of luck!`);
+		}
+		else if (ageRunner === 18) {
+		  console.log ('Please see registration desk');
+		}
+
+	</script>
+
+</body>
+</html>
